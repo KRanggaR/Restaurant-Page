@@ -12,20 +12,15 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-        template: './src/template.html',  // Template for the main index.html
-        filename: 'template.html', // Output file name
-      }),
-      new HtmlWebpackPlugin({
-        template: './src/home.html',  // Template for home.html
-        filename: 'home.html', // Output file name
-      }),
-      new HtmlWebpackPlugin({
-        template: './src/menu.html',  // Template for menu.html
-        filename: 'menu.html', // Output file name
-      }),
-      new HtmlWebpackPlugin({
-        template: './src/contact.html',  // Template for contact.html
-        filename: 'contact.html', // Output file name
-      }),
+      template: './src/template.html',  // Template for the main index.html
+    }),
   ],
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      },
+    ],
+  },
 };

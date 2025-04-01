@@ -12,8 +12,8 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-        template: './src/index.html',  // Template for the main index.html
-        filename: 'index.html', // Output file name
+        template: './src/template.html',  // Template for the main index.html
+        filename: 'template.html', // Output file name
       }),
       new HtmlWebpackPlugin({
         template: './src/home.html',  // Template for home.html

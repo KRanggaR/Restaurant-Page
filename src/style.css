@@ -9,17 +9,18 @@
 
 }
 
-body  {
+body {
     background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('../assets/rest-background.jpg');
     background-size: cover;
 
-  }
+}
 
-.container {
+.restaurant-template {
     max-width: 80%;
     margin: auto;
 }
 
+/* HOME */
 .navbar {
     display: flex;
     flex-direction: row;
@@ -41,7 +42,7 @@ body  {
 .nav-links {
     display: flex;
     gap: 50px;
-    
+
 }
 
 .nav-links button {
@@ -83,10 +84,15 @@ body  {
 .home-intro button {
     font-weight: 600;
     font-size: 14px;
-    background-color: rgba(0,0,0, 0);
+    background-color: rgba(0, 0, 0, 0);
     padding: 12px;
     max-width: 18%;
     text-align: center;
     border-radius: 33px;
     border: 1px solid white;
+}
+.home-intro button:hover {
+    cursor: pointer;
+    font-size: 15px;
+    padding: 14px;
 }

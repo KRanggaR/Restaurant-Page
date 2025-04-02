@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.querySelector(".nav-links").addEventListener("click", (event) => {
         if (event.target.tagName === "BUTTON") {
-            const page = event.target.getAttribute("data-page");
+            const page = event.target.dataset.page;
             renderPage(page);
         }
 

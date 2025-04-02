@@ -91,8 +91,99 @@ body {
     border-radius: 33px;
     border: 1px solid white;
 }
+
 .home-intro button:hover {
     cursor: pointer;
     font-size: 15px;
     padding: 14px;
+}
+
+.contact-details {
+    margin-top: 16%;
+}
+
+.food-items {
+    display: grid;
+    column-gap: 50px;
+    grid-template-columns: auto auto auto;
+    padding: 3px;
+}
+
+.food-items>div {
+    padding: 18px;
+    font-size: 30px;
+    text-align: start;
+}
+
+.food-items>div {
+    padding: 18px;
+    font-size: 30px;
+    text-align: start;
+    
+}
+
+.food-title{
+    font-size: 23px;
+    font-weight:300;
+    font-style: italic;
+}
+
+.food1 {
+    background-image: url("../assets/Food1.png");
+    background-size: cover;
+    background-position: center;
+    height: 20vh;
+    width: 20vw;
+    margin-bottom: 20px;
+    border-radius: 12px;
+}
+
+.food2 {
+    background-image: url("../assets/Food2.png");
+    background-size: cover;
+    background-position: center;
+    height: 20vh;
+    width: 20vw;
+    margin-bottom: 20px;
+    border-radius: 12px;
+}
+
+.food3 {
+    background-image: url("../assets/Food3.png");
+    background-size: cover;
+    background-position: center;
+    height: 20vh;
+    width: 20vw;
+    margin-bottom: 20px;
+    border-radius: 12px;
+}
+
+.food4 {
+    background-image: url("../assets/Food4.png");
+    background-size: cover;
+    background-position: center;
+    height: 20vh;
+    width: 20vw;
+    margin-bottom: 20px;
+    border-radius: 12px;
+}
+
+.food5 {
+    background-image: url("../assets/Food5.png");
+    background-size: cover;
+    background-position: center;
+    height: 20vh;
+    width: 20vw;
+    margin-bottom: 20px;
+    border-radius: 12px;
+}
+
+.food6 {
+    background-image: url("../assets/Food6.png");
+    background-size: cover;
+    background-position: center;
+    height: 20vh;
+    width: 20vw;
+    margin-bottom: 20px;
+    border-radius: 12px;
 }

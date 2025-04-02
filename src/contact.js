@@ -1,15 +1,14 @@
 export function createContactSection() {
-    const content = document.getElementById("content");
-    content.innerHTML = ""; // Clear previous content
-
     const section = document.createElement("section");
     section.classList.add("contact");
 
-    section.innerHTML = `
-        <h1>Contact Us</h1>
-        <p>For reservations, reach us at contact@restbrook.com</p>
-        <button onclick="loadPage('home')">Go Back Home</button>
-    `;
+    const title = document.createElement("h2");
+    title.textContent = "Contact Us";
 
-    content.appendChild(section);
+    const info = document.createElement("p");
+    info.textContent = "Visit us or call at +123 456 7890.";
+
+    section.append(title, info);
+
+    return section;
 }

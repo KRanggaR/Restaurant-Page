@@ -1,8 +1,5 @@
 export function createHomeSection() {
 
-    const content = document.getElementById("content");
-    content.innerHTML = ""; // Clear previous content
-
     const section = document.createElement("section");
     section.classList.add("home");
 
@@ -40,5 +37,6 @@ export function createHomeSection() {
     homeIntro.appendChild(button);
     section.appendChild(homeIntro);
 
-    content.appendChild(section);
+    return section;
+    // content.appendChild(section);
 }

@@ -3,20 +3,36 @@ import { createHomeSection } from "./home.js";
 import { createMenuSection } from "./menu.js";
 import { createContactSection } from "./contact.js";
 
-function loadPage(page) {
-    if (page === "home") {
-        createHomeSection();
-    } else if (page === "menu") {
-        createMenuSection();
-    } else if (page === "contact") {
-        createContactSection();
-    }
-}
-
-// Load home page by default when the site loads
 document.addEventListener("DOMContentLoaded", () => {
-    createHomeSection();
-});
+    const content = document.getElementById("content");
 
-// Make function available in the global scope
-window.loadPage = loadPage;
+    function renderPage(page) {
+        content.innerHTML = "";
+        let section;
+        if (page == "home") {
+            section = createHomeSection();
+        }
+        else if (page == "contact") {
+            section = createContactSection();
+        }
+        else if (page == "menu") {
+            section = createMenuSection();
+        }
+
+        if (section) {
+            content.appendChild(section)
+        }
+    }
+
+    renderPage("home");
+
+
+
+    document.querySelector(".nav-links").addEventListener("click", (event) => {
+        if (event.target.tagName === "BUTTON") {
+            const page = event.target.getAttribute("data-page");
+            renderPage(page);
+        }
+
+    });
+});

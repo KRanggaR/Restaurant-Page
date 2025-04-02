@@ -1,15 +1,14 @@
 export function createMenuSection() {
-    const content = document.getElementById("content");
-    content.innerHTML = ""; // Clear previous content
-
     const section = document.createElement("section");
     section.classList.add("menu");
 
-    section.innerHTML = `
-        <h1>Our Menu</h1>
-        <p>Explore our delicious dishes!</p>
-        <button onclick="loadPage('home')">Go Back Home</button>
-    `;
+    const title = document.createElement("h2");
+    title.textContent = "Our Menu";
 
-    content.appendChild(section);
+    const description = document.createElement("p");
+    description.textContent = "Delicious meals crafted by expert chefs.";
+
+    section.append(title, description);
+
+    return section;
 }
